@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Floating WhatsApp Button Demo</title>
+    <title>Demonstração de botão de chat WhatsApp</title>
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="floating-wpp.css">
     <script type="text/javascript" src="floating-wpp.js"></script>
@@ -21,15 +21,16 @@
 <script type="text/javascript">
     $(function () {
         $('#myButton').floatingWhatsApp({
-            phone: '5491133359850',
-            popupMessage: 'Hello, how can we help you?',
-            message: "I'd like to order a pizza",
+            phone: '552733155177',
+            popupMessage: 'Olá, como podemos ajudar você ?',
+            message: "",
+            position: 'right',
             showPopup: true,
-            showOnIE: false,
-            headerTitle: 'Welcome!',
-            headerColor: 'crimson',
-            backgroundColor: 'crimson',
-            buttonImage: '<img src="burger.svg" />'
+            showOnIE: true,
+            headerTitle: 'Bem Vindo!',
+            headerColor: '#128C7E',
+            backgroundColor: '#25D366',
+            buttonImage: '<img src="whatsapp.svg" />'
         });
     });
 </script>

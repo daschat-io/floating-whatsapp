@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Demonstração de botão de chat WhatsApp</title>
+</head>
+
+<!-- Se o site já usa JQuery não precisa a linha abaixo -->
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+<!-- JS e CSS para o botão -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/daschat-io/floating-whatsapp/floating-wpp.min.css">
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/gh/daschat-io/floating-whatsapp/floating-wpp.min.js"></script>
+
+<!-- Exibe o botão -->
+<!-- Antes do <body> -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('body').append('<div id="DaschatButton"</div>');
+        $('#DaschatButton').floatingWhatsApp({
+            phone: '552730946217',
+            popupMessage: 'Olá, como podemos ajudar você ?',
+            message: "",
+            position: 'right',
+            showPopup: true,
+            showOnIE: true,
+            headerTitle: 'Bem Vindo!',
+            headerColor: '#128C7E',
+            backgroundColor: '#25D366',
+            buttonImage: '<img src="whatsapp.svg" />'
+        });
+    });
+</script>
+
+<body>
+    TESTE DE BOTÃO DE CHAT WhatsApp
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demonstração de botão de chat WhatsApp</title>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/gh/daschat-io/floating-whatsapp/floating-wpp.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('head').append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/daschat-io/floating-whatsapp/floating-wpp.css">');
+        // var cssref = document.createElement("link");
+        // cssref.setAttribute("rel", "stylesheet");
+        // cssref.setAttribute("type", "text/css");
+        // cssref.setAttribute("href", 'https://cdn.jsdelivr.net/gh/daschat-io/floating-whatsapp/floating-wpp.css');
+        // document.getElementsByTagName("head")[0].appendChild(cssref);
+
+        // $('head').append('<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/daschat-io/floating-whatsapp/floating-wpp.min.js"><\/script>');
+        // $.getScript("https://cdn.jsdelivr.net/gh/daschat-io/floating-whatsapp/floating-wpp.min.js", function () {
+        //     alert("Running test.js");
+        // });
+
+        // $('<script>')
+        //     .attr('type', 'text/javascript')
+        //     .attr('src', 'https://cdn.jsdelivr.net/gh/daschat-io/floating-whatsapp/floating-wpp.min.js')
+        //     .appendTo('head');
+        // var fileref=document.createElement('script')
+        // fileref.setAttribute("type","text/javascript")
+        // fileref.setAttribute("src", 'https://cdn.jsdelivr.net/gh/daschat-io/floating-whatsapp/floating-wpp.min.js')
+        // document.getElementsByTagName("head")[0].appendChild(fileref)
+
+        $('body').append('<div id="DaschatButton"</div>');
+        $('#DaschatButton').floatingWhatsApp({
+            phone: '552730946217',
+            popupMessage: 'Olá, como podemos ajudar você ?',
+            message: "",
+            position: 'right',
+            showPopup: true,
+            showOnIE: true,
+            headerTitle: 'Bem Vindo!',
+            headerColor: '#128C7E',
+            backgroundColor: '#25D366',
+            buttonImage: '<img src="whatsapp.svg" />'
+        });
+    });
+</script>
+
+
+<body>
+    TESTE DE BOTÃO DE CHAT WhatsApp
+</body>
+</html>
